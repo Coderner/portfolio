@@ -1,19 +1,20 @@
 #home{
    display: flex;
    flex-direction: row;
-   background-color: rgb(140, 123, 238);
-   height: 1100 px;
-   color:rgb(134, 9, 15);
+   background-color: rgb(138, 65, 232);
+   background-attachment: scroll;
+   color:rgb(247, 243, 243);
    justify-content: center;
    align-items: center;
    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+   background-image: url("../images/bg.jpeg");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
 #home::before{
     content: "";
-    position: absolute;
     top:0;
     right:0;
-    background-image: url("../images/bg.jpeg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -23,7 +24,7 @@
     opacity: .7;
 }
 .main{
-    display: flex;
+    display:block;
     flex-direction: column;
     border: 1px solid rgb(151, 168, 245);
     position:absolute;
@@ -32,7 +33,7 @@
 }
 .headings{
     font-family: century;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     margin: 30px 0px;
 }
